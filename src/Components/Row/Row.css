@@ -1,3 +1,7 @@
+.row {
+  padding-left: 20px;
+}
+
 .row__posters {
   display: flex;
   overflow-y: hidden;
@@ -5,7 +9,7 @@
   padding: 20px;
 }
 
-row.row__posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar {
   display: none;
 }
 
@@ -20,4 +24,12 @@ row.row__posters::-webkit-scrollbar {
 .row__poster:hover {
   transform: scale(1.08);
   opacity: 1;
+}
+
+.row__posterLarge {
+  max-width: 25px;
+}
+
+.row__poster:hover {
+  transform: scale(1.09);
 }
