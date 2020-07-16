@@ -3,6 +3,7 @@ import "./App.css";
 
 import Row from "./Components/Row/Row";
 import Banner from "./Components/Banner/Banner";
+import Nav from "./Components/Nav/Nav";
 
 import requests from "./requests";
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <Row title="Trending Movies" isLarge fetchUrl={fetchTrending} />
       <Row title="Netflix Originals" fetchUrl={fetchNetflixOriginals} />
